@@ -1,3 +1,7 @@
+body{
+  background-color: white;
+  margin: 0;
+}
 .App {
   text-align: center;
 }
@@ -28,6 +32,14 @@
   color: #61dafb;
 }
 
+/* App.css */
+.container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space cards evenly */
+  flex-wrap: wrap;
+  align-items: center; /* Allow cards to wrap if there are too many */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +48,4 @@
     transform: rotate(360deg);
   }
 }
+

@@ -1,0 +1,25 @@
+.card-container {
+    display: inline;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+  }
+  
+  @media (max-width: 500px) and (max-height: 700px) {
+    .card-container {
+      display: flex;
+      align-items: center;
+      min-height: 100vh;
+    }
+  }
+  /* Cards.css */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1; /* This allows the cards to grow and fill the space equally */
+  margin: 10px; /* Add margin for spacing */
+  min-width: 250px; /* Optional: Set a minimum width for the cards */
+}
