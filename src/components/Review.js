@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import './review.css';
+import {addReview }from '../functions/addReview';
 
-export default function Review({ addReview }) { // Ensure addReview is received as a prop
+export default function Review() { // Ensure addReview is received as a prop
     const [rating, setRating] = useState(0);
     const [comment, setComment] = useState('');
     const [isOpen, setIsOpen] = useState(false);
+    const [reviews, setReviews] = useState([]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
         // if (typeof addReview === 'function') {
-        addReview(rating, comment); // Call the function to add the review
+        addReview(rating, comment, reviews, setReviews); // Call the function to add the review
         // } else {
         //     console.error('addReview is not a function');
         // }
+        console.log("SUCESS: " + comment);
+        
         setRating('0'); // Reset rating
         setComment(''); // Reset comment
         setIsOpen(false); // Close the modal after submission

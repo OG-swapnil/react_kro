@@ -15,36 +15,37 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Review from './components/Review';
 import { useState } from 'react';
+import { addReview } from './functions/addReview';
 
 function App() {
   const [reviews, setReviews] = useState([]);
 
-    // const addReview = (rating, comment) => {
-    //     setReviews([...reviews, { rating, comment }]);
-    // };
+  // const addReview = (rating, comment) => {
+  //     setReviews([...reviews, { rating, comment }]);
+  // };
   return (
     <Router>
       <div>
-        <Navbar title="GlamCart"/>
-        <Carousel/>
+        <Navbar title="GlamCart" />
+        <Carousel />
         <div className='container'>
-          <Cards1 reviews={reviews}/>
-          <Cards2 reviews={reviews}/>
-          <Cards3 reviews={reviews}/>
+          <Cards1 reviews={reviews} />
+          <Cards2 reviews={reviews} />
+          <Cards3 reviews={reviews} />
         </div>
         <div className='container'>
-          <Cards4 reviews={reviews}/>
-          <Cards5 reviews={reviews}/>
-          <Cards6 reviews={reviews}/>
+          <Cards4 reviews={reviews} />
+          <Cards5 reviews={reviews} />
+          <Cards6 reviews={reviews} />
         </div>
         <div className='container'>
-          <Cards7 reviews={reviews}/>
-          <Cards8 reviews={reviews}/>
-          <Cards9 reviews={reviews}/>
+          <Cards7 reviews={reviews} />
+          <Cards8 reviews={reviews} />
+          <Cards9 reviews={reviews} />
         </div>
-        {/* <div>
-            <Review addReview={addReview} />
-        </div> */}
+        <div>
+          <Review addReview={addReview} />
+        </div>
       </div>
       <Routes>
         <Route path="/login" element={<Login />} />
