@@ -1,7 +1,7 @@
 import React from 'react';
 import './carousel.css';
-import Prod1 from '../imgs/Prod1.jpg';
-import Prod2 from '../imgs/Prod2.jpg';
+import Prod1 from '../components/imgs/Prod1.jpg';
+import Prod2 from '../components/imgs/Prod2.jpg';
 
 export default function Carousel() {
   return (

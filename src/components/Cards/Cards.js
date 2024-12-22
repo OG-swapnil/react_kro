@@ -5,9 +5,9 @@ import Review from '../Review';
 import { Link } from 'react-router-dom';
 
 export default function Cards({ cardId, reviews, addReview }) {
-    Cards.defaultProps = {
-        addReview: () => {}, // Default to an empty function
-    };
+    // Cards.defaultProps = {
+    //     addReview: () => {}, // Default to an empty function
+    // };
     const [text, setText] = useState("Add to Cart");
     const [init, setInit] = useState(0);
 
